@@ -12,17 +12,22 @@ class CreateTables extends Migration {
 	 */
 	public function up()
 	{
+		
+		//Creates table for users with unique identifier, and three fields that are self-explanatory.  
 		Schema::create('users', function(Blueprint $table) {
 			$table->increments('id');
 			$table->string('name');
 			$table->string('password');
 			$table->string('email');
 			$table->timestamps();
+			
 			$table->boolean('remember_token');
 			
 			
 		
 		}); 
+		
+			//Creates a contact manager that has a unique id, an id that links it to the user who owns the contact, and then three fields - name, email, and phone number
 		
 			Schema::create('contacts' , function(Blueprint $table) {
 			$table ->increments('id');
@@ -40,7 +45,8 @@ class CreateTables extends Migration {
 	 *
 	 * @return void
 	 */
-	public function down()
+	public function down() //Obviously here we just drop the two tables
+	
 	{
 				Schema::drop('users') ;
 				Schema::drop('contacts');
