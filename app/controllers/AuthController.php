@@ -7,7 +7,7 @@ class AuthController extends Controller {
 
 }
 
-/Proccesses credentials to login a user.  Username and password are required.  Invalid login will redirect with a message. 
+//Proccesses credentials to login a user.  Username and password are required.  Invalid login will redirect with a message. 
 
 	public function postlogin() {
 	
