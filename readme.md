@@ -1,5 +1,7 @@
 Application URL Will Be Displayed Momentarily.  
 
+ I created a contact manager for the final project.  I have the user authentication and sign up features available.  Once you are logged in, you can add, modify, and delete a contact.  I kept it very simple, with three fields - a name, email, and phone number - for each contact.  The database just uses two tables, one for users, and one for contacts.  
+
 
 
 ## Laravel PHP Framework
