@@ -17,6 +17,10 @@ class HomeController extends BaseController
 	|
 	*/
 
+	
+	//When home page is reached after login, an array of contacts that belong to said user is generated for the Home View. 
+
+
 	public function getIndex()
 	{
 				
@@ -28,6 +32,8 @@ class HomeController extends BaseController
 			);
 	}
 		
+		
+	//How a contact is modified and saved from form.  Name needs to have at least one character and is required.  Redirects to home page if invalid.	
 		
 	public function postSave()
 	{
@@ -57,6 +63,7 @@ class HomeController extends BaseController
 
 	}
 	
+	//When clicking on option for new contact, directs you to "new" view for a form. 
 	
 	public function getNew()
 	{		
@@ -65,6 +72,8 @@ class HomeController extends BaseController
 		
 	} 
 	
+	
+	//How a new contact from the new View is processed. Same requirements as when modifying a contact. 
 	
 	public function postNew() 
 	{
@@ -98,7 +107,7 @@ class HomeController extends BaseController
 		return Redirect::route('home'); 
 
 	
-	
+	//Method to delete a contact.  The URL will include the contact's unique ID, so this variable is used to identify the contact in the model, and then it's deleted from database. 
 	}
 	
 	
