@@ -56,7 +56,7 @@ return array(
 			'driver'    => 'mysql',
 			'host'      => '127.0.0.1',
 			'port'      => '3305',
-			'database'  => 'Contacts',
+			'database'  => 'contacts',
 			'username'  => 'root',
 			'password'  => 'root',
 			'charset'   => 'utf8',
